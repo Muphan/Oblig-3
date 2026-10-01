@@ -37,6 +37,7 @@ def save_films(list, filename):
     with open(filename, "w", encoding="utf-8") as f:
         for film in list:
             f.write(f"{film['name']} - {film['release']} has a rating of {film['rating']}\n")
+    #legger ikke inn print her, fordi jeg tenkte ikke på det før etter jeg så gemini gjøre det, men det er absolutt en god idé å gjøre.
 
 save_films(filmer, "movies.txt")
 

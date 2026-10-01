@@ -26,7 +26,7 @@ movies = [
     {"name": "A.I. Artificial Intelligence", "year": 2001, "rating": 7.2},
     {"name": "Upgrade", "year": 2018, "rating": 7.5}
 ]
-## Hmm.. ser ut som gemini har sans for ett spesielt tema...
+## Hmm.. ser ut som gemini har sans for ett spesielt tema... (... okei... I *MAY* have nudged it a bit.. :3)
 
 # A) Funksjon som skriver filmlisten til fil (overskriver dersom den finnes)
 def write_movies_to_file(movie_list, filename):

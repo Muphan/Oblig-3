@@ -1,5 +1,3 @@
-from nt import remove
-
 import file_handler as fih
 
 filmer = [
@@ -13,9 +11,9 @@ def film_manager(f_list, mode="add", arg=None):
     def add():
         if isinstance(arg, list): # her kunne jeg gjort som jeg senere gjorde med change(), bare pakket en singel liste inn i en liste for å være konform med inputkravet
             if isinstance(arg[0], list):
-                for m in arg:
-                    f_list.append({"name": m[0], "release": m[1], "rating": m[2]})
-                    print(f"{m[0]} added successfully!")
+                for movie in arg:
+                    f_list.append({"name": movie[0], "release": movie[1], "rating": movie[2]})
+                    print(f"{movie[0]} added successfully!")
                 print()
                 return
 
@@ -62,7 +60,7 @@ def film_manager(f_list, mode="add", arg=None):
             print(f"{film['name']}, kom ut i {film['release']} og har en imdb rating på {film['rating']}")
         print()
 
-
+    # moduser som kan brukes som argument i film_manager()
     modes = {
         "add": add,
         "remove": remove,
@@ -96,6 +94,10 @@ film_manager(filmer, "print")
 print("Remove:")
 film_manager(filmer, "remove", "Troll 2")
 film_manager(filmer, "print")
+
+
+
+
 
 #Bonus 3
 test_liste1 = []

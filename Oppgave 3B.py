@@ -21,3 +21,16 @@ nysgjerrige_matretter = [
 
 # Kall på funksjonen
 skriv_ut_liste(nysgjerrige_matretter)
+
+
+"""
+=============================================
+Kjøreeksempel:
+=============================================
+- Svart hvitløks-iskrem med krystallisert sjøtang
+- Mole Poblano med 100 ingredienser og mørk sjokolade
+- Fugu (kulefisk) sashimi
+
+Process finished with exit code 0
+
+"""
