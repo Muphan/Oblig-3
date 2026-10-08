@@ -31,4 +31,4 @@ Kjøreeksempel:
 54m^3
 
 Process finished with exit code 0
-"""
+"""3
